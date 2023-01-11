@@ -207,16 +207,16 @@ export default function Example() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="max-w-3xl pt-20 mt-20 pb-32 sm:pt-48 sm:pb-40">
+          <div className="flex justify-end max-w-3xl pt-20 mt-20 pb-20 sm:pt-48 sm:pb-40">
             <div>
               <div>
-                <h1 className="text-3xl font-light tracking-tight sm:text-left sm:text-6xl">
+                <h1 className="text-3xl font-light tracking-tight text-left sm:text-6xl">
                   Collaborative intelligence for investment, tax, and estate strategies.
                 </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a
                     href="#"
-                    className="inline-block hover:animate-pulse rounded-lg bg-slate-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-slate-600 hover:bg-slate-700 hover:ring-slate-700"
+                    className="inline-block hover:animate-pulse rounded-lg bg-slate-600 px-4 py-1.5 sm:text-base text-sm font-semibold leading-7 text-white shadow-sm ring-1 ring-slate-600 hover:bg-slate-700 hover:ring-slate-700"
                   >
                     Get In Touch{' '}
                     <span className="text-slate-200" aria-hidden="true">

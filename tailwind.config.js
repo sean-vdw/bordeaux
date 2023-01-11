@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 12s infinite',
+        'spin-slow': 'spin 9s infinite',
         'bounce-slow': 'bounce 4s infinite'
       }
     },
