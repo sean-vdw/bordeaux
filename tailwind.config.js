@@ -6,7 +6,12 @@ module.exports = {
     "./src/components/Header.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 12s infinite',
+        'bounce-slow': 'bounce 4s infinite'
+      }
+    },
   },
   plugins: [],
 }

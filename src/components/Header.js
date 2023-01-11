@@ -5,22 +5,37 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About Us', href: '#' },
+  { name: 'Team', href: '#' },
+  { name: 'Services', href: '#' },
+  { name: 'Insights', href: '#' },
 ]
 
 const solutions = [
-  { name: 'Blog', description: 'Learn about tips, product updates and company culture.', href: '#' },
+  { 
+    name: 'Portfolio Reporting', 
+    description: 'View your portfolio reports', 
+    href: 'https://bordeaux.portal.tamaracinc.com/' },
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums of contact support.',
-    href: '#',
+    name: 'Client Vault',
+    description: 'Secure document storage',
+    href: 'https://wealth.emaplan.com/ema/SignIn?ema%2fria%2fbordeauxwa',
   },
-  { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-  { name: 'Events', description: 'Check out webinars with experts and learn about our annual conference.', href: '#' },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
+  { 
+    name: 'Schwab', 
+    description: 'Log into your Schwab account', 
+    href: 'https://www.schwab.com/public/schwab/nn/login/login.html&lang=en' 
+  },
+  { 
+    name: 'Fidelity', 
+    description: 'Log into your Fidelity account', 
+    href: 'https://www.fidelity.com/' 
+  },
+  { 
+    name: 'Pershing', 
+    description: 'Log into your Pershing account', 
+    href: 'https://investor.pershing.com/nxi/login' 
+  },
 ]
 
 function classNames(...classes) {
@@ -34,7 +49,7 @@ export default function Example() {
     <div className="isolate bg-white">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
-          className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          className="relative animate-spin-slow left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +68,8 @@ export default function Example() {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#9089FC" />
-              <stop offset={1} stopColor="#FF80B5" />
+              <stop stopColor="#1d3a72" />
+              <stop offset={1} stopColor="#1d6572" />
             </linearGradient>
           </defs>
         </svg>
@@ -65,7 +80,7 @@ export default function Example() {
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=slate&shade=600" alt="" />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -92,7 +107,7 @@ export default function Example() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                        'group inline-flex items-center rounded-md bg-transparent text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2'
                       )}
                     >
                       <span>Log In</span>
@@ -133,9 +148,9 @@ export default function Example() {
               </Popover>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="ml-8 hover:animate-pulse inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
               >
-                Sign up
+                Contact Us
               </a>
             </div>
           </nav>
@@ -147,7 +162,7 @@ export default function Example() {
                     <span className="sr-only">Your Company</span>
                     <img
                       className="h-8"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=slate&shade=600"
                       alt=""
                     />
                   </a>
@@ -192,43 +207,19 @@ export default function Example() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+          <div className="max-w-3xl pt-20 mt-20 pb-32 sm:pt-48 sm:pb-40">
             <div>
-              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  <span className="text-gray-600">
-                    Announcing our next round of funding.{' '}
-                    <a href="#" className="font-semibold text-indigo-600">
-                      <span className="absolute inset-0" aria-hidden="true" />
-                      Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
               <div>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Data to enrich your online business
+                <h1 className="text-3xl font-light tracking-tight sm:text-left sm:text-6xl">
+                  Collaborative intelligence for investment, tax, and estate strategies.
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua.
-                </p>
-                <div className="mt-8 flex gap-x-4 sm:justify-center">
+                <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a
                     href="#"
-                    className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                    className="inline-block hover:animate-pulse rounded-lg bg-slate-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-slate-600 hover:bg-slate-700 hover:ring-slate-700"
                   >
-                    Get started{' '}
-                    <span className="text-indigo-200" aria-hidden="true">
-                      &rarr;
-                    </span>
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-                  >
-                    Live demo{' '}
-                    <span className="text-gray-400" aria-hidden="true">
+                    Get In Touch{' '}
+                    <span className="text-slate-200" aria-hidden="true">
                       &rarr;
                     </span>
                   </a>
@@ -236,7 +227,7 @@ export default function Example() {
               </div>
               <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg
-                  className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                  className="relative animate-spin-slow left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
                   viewBox="0 0 1155 678"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -255,8 +246,8 @@ export default function Example() {
                       y2="474.645"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#9089FC" />
-                      <stop offset={1} stopColor="#FF80B5" />
+                      <stop stopColor="#0a465d" />
+                      <stop offset={1} stopColor="#0a5b5d" />
                     </linearGradient>
                   </defs>
                 </svg>
