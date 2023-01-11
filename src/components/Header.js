@@ -2,6 +2,7 @@ import { useState, Fragment } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import bwaLogo from '../images/logo.svg'
 
 const navigation = [
   { name: 'About Us', href: '#' },
@@ -79,7 +80,7 @@ export default function Example() {
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Bordeaux Wealth Advisors</span>
-                <img className="h-8" src='../images/logo.png' alt="Bordeaux Wealth Advisors" />
+                <img className="h-8" src={bwaLogo} alt="Bordeaux Wealth Advisors" />
               </a>
             </div>
             <div className="flex lg:hidden">
