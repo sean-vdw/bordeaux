@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v3.0+ */
 import { useState, Fragment } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -79,8 +78,8 @@ export default function Example() {
           <nav className="flex h-9 align-middle items-center justify-between" aria-label="Global">
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=slate&shade=600" alt="" />
+                <span className="sr-only">Bordeaux Wealth Advisors</span>
+                <img className="h-8" src='../images/logo.png' alt="Bordeaux Wealth Advisors" />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -95,7 +94,7 @@ export default function Example() {
             </div>
             <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:text-gray-900">
+                <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:text-sky-700 ease-in duration-300">
                   {item.name}
                 </a>
               ))}
@@ -133,7 +132,7 @@ export default function Example() {
                               <a
                                 key={item.name}
                                 href={item.href}
-                                className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50"
+                                className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 hover:scale-105 hover:drop-shadow-xl"
                               >
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -148,9 +147,9 @@ export default function Example() {
               </Popover>
               <a
                 href="#"
-                className="ml-8 hover:animate-pulse inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-slate-700"
+                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-sky-700 ease-in duration-300 hover:scale-105 hover:drop-shadow-2xl"
               >
-                Contact Us
+                Get In Touch
               </a>
             </div>
           </nav>
@@ -207,7 +206,7 @@ export default function Example() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="flex justify-end max-w-3xl pt-20 mt-20 pb-20 sm:pt-48 sm:pb-40">
+          <div className="flex justify-end max-w-3xl pt-20 mt-32 pb-20 sm:pt-48 sm:pb-40">
             <div>
               <div>
                 <h1 className="text-3xl font-light tracking-tight text-left sm:text-6xl">
@@ -216,9 +215,9 @@ export default function Example() {
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a
                     href="#"
-                    className="inline-block hover:animate-pulse rounded-lg bg-slate-600 px-4 py-1.5 sm:text-base text-sm font-semibold leading-7 text-white shadow-sm ring-1 ring-slate-600 hover:bg-slate-700 hover:ring-slate-700"
+                    className="inline-block rounded-lg bg-slate-600 px-4 py-1.5 sm:text-base text-sm font-semibold leading-7 text-white shadow-sm ring-1 ring-slate-600 hover:bg-sky-700 hover:ring-sky-700 ease-in duration-300 hover:scale-105 hover:drop-shadow-2xl"
                   >
-                    Get In Touch{' '}
+                    Learn More{' '}
                     <span className="text-slate-200" aria-hidden="true">
                       &rarr;
                     </span>
