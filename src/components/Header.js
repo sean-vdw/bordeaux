@@ -6,8 +6,8 @@ import bwaLogo from '../images/logo.svg'
 
 const navigation = [
   { name: 'About Us', href: '#' },
-  { name: 'Team', href: '#' },
   { name: 'Services', href: '#' },
+  { name: 'Team', href: '#' },
   { name: 'Insights', href: '#' },
 ]
 
