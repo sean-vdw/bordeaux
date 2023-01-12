@@ -5,12 +5,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./src/components/Header.js",
     "./src/components/About.js",
+    "./src/components/Services.js",
   ],
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 7s infinite',
-        'bounce-slow': 'bounce 4s infinite'
+        'spin-slow': 'spin 7s infinite linear',
+        'bounce-slow': 'bounce 4s infinite',
+        'wiggle': 'wiggle 16s ease-in-out infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-180deg)' },
+          '50%': { transform: 'rotate(180deg)' },
+        }
       }
     },
   },

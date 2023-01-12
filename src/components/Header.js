@@ -6,7 +6,7 @@ import bwaLogo from '../images/logo.svg'
 
 const navigation = [
   { name: 'About Us', href: '#about' },
-  { name: 'Services', href: '#' },
+  { name: 'Services', href: '#services' },
   { name: 'Team', href: '#' },
   { name: 'Insights', href: '#' },
 ]
@@ -49,7 +49,7 @@ export default function Example() {
     <div className="isolate bg-white">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
-          className="relative animate-spin-slow left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          className="relative animate-wiggle left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -227,7 +227,7 @@ export default function Example() {
               </div>
               <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg
-                  className="relative animate-spin-slow left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                  className="relative animate-wiggle left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
                   viewBox="0 0 1155 678"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
