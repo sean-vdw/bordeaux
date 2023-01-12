@@ -1,42 +1,42 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  CogIcon,
-  LockClosedIcon,
-  ServerIcon,
-  ShieldCheckIcon,
+  CalculatorIcon,
+  ChartPieIcon,
+  GlobeAmericasIcon,
+  LightBulbIcon,
+  LockOpenIcon,
+  MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: 'Investment Management',
     description: 'We strive to deliver exceptional results by allocating capital to leading institutional minds across portfolios. In doing so, we can participate in uncorrelated growth across public and private markets.',
-    icon: CloudArrowUpIcon,
+    icon: ChartPieIcon,
   },
   {
     name: 'Impact',
     description: 'We believe in leverging our expertise to make an impact at scale. This means providing families with best-in-class resources to benefit the communities, people, and causes that are most important to them.',
-    icon: LockClosedIcon,
+    icon: GlobeAmericasIcon,
   },
   {
     name: 'Tax Strategy',
     description: 'We view the world through a tax-focused lens and integrate its planning deeply into each of our decisions. This includes forward-looking projections, return analysis, and working in lockstep with existing counsel.',
-    icon: ArrowPathIcon,
+    icon: CalculatorIcon,
   },
   {
     name: 'Enhanced Diligence',
     description: 'Whether we\'re focusing on equity compensation, QSBS, charitable giving, generational wealth transfer, or managing cash flow, we provide a thorough, data-informed decision for any finance-related questions.',
-    icon: ShieldCheckIcon,
+    icon: MagnifyingGlassIcon,
   },
   {
     name: 'Institutional Access',
     description: 'We believe you need to think outside of stocks and bonds for diversified growth and asset protection. We utilize assets like institutional real estate, private debt, and venture capital to enhance risk-adjusted returns.',
-    icon: CogIcon,
+    icon: LockOpenIcon,
   },
   {
     name: 'Knowledge Network',
     description: 'With deep roots in the technological ecosystems of the world, we believe we can leverage our network to promote best-in-class thinking and disseminate unique ideas to our partners.',
-    icon: ServerIcon,
+    icon: LightBulbIcon,
   },
 ]
 
