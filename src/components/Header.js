@@ -5,7 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import bwaLogo from '../images/logo.svg'
 
 const navigation = [
-  { name: 'About Us', href: '#' },
+  { name: 'About Us', href: '#about' },
   { name: 'Services', href: '#' },
   { name: 'Team', href: '#' },
   { name: 'Insights', href: '#' },
@@ -159,7 +159,7 @@ export default function Example() {
               <div className="flex h-9 items-center justify-between">
                 <div className="flex">
                   <a href="#" className="-m-1.5 p-1.5">
-                    <span className="sr-only">Your Company</span>
+                    <span className="sr-only">Bordeaux Wealth Advisors</span>
                     <img
                       className="h-8"
                       src={bwaLogo}
