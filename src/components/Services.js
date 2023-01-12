@@ -71,7 +71,7 @@ export default function Services() {
         </svg>
       </div>
       <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-        <h2 className="text-lg font-semibold uppercase text-sky-800">What We Do</h2>
+        <h3 className="text-lg font-semibold uppercase text-sky-800">What We Do</h3>
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Differentiated Thinking, Differentiated Outcomes.
         </p>
