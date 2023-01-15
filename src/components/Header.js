@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -38,12 +38,27 @@ const solutions = [
   },
 ]
 
+const clients = ['general partners', 'executives', 'entrepreneurs']
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [clientName, setClientName] = useState(clients[0]);
+  let count = 0;
+
+  const cycleArray = () => {
+    let client = clients[count];
+    setClientName(client);
+    count++;
+    if (count === clients.length) {
+      count = 0;
+    }
+  }
+  setInterval(cycleArray, 2000);
 
   return (
     <div className="isolate bg-white">
@@ -211,7 +226,7 @@ export default function Example() {
             <div>
               <div>
                 <h1 className="text-3xl font-light tracking-tight text-left sm:text-6xl">
-                  Collaborative intelligence for investment, tax, and estate strategies.
+                  Premier family office services for <span className='font-semibold text-sky-700'>{clientName}</span>.
                 </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a
