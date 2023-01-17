@@ -1,8 +1,9 @@
-import { useState, useEffect, Fragment } from 'react'
+import { useState, useEffect, useRef, Fragment } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import bwaLogo from '../images/logo.svg'
+import TextTransition, { presets } from 'react-text-transition'
 
 const navigation = [
   { name: 'About Us', href: '#about' },
@@ -38,27 +39,44 @@ const solutions = [
   },
 ]
 
-const clients = ['general partners', 'executives', 'entrepreneurs']
+const clients = ['venture capitalists', 'executives', 'private equity partners', 'entrepreneurs'];
 
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [clientName, setClientName] = useState(clients[0]);
-  let count = 0;
+  const [index, setIndex] = useState(0);
 
-  const cycleArray = () => {
-    let client = clients[count];
-    setClientName(client);
-    count++;
-    if (count === clients.length) {
-      count = 0;
-    }
-  }
-  setInterval(cycleArray, 2000);
+  // const cycleArray = () => {
+  //   let client = clients[count];
+  //   console.log(client);
+  //   count++;
+  //   displayedClient = clients[count];
+  //   if (count === clients.length) {
+  //     count = 0;
+  //   }
+  // }
+  // setInterval(cycleArray, 2000);
+
+  // const cycleDispClient = () => {
+  //   console.log(currClient.current);
+  //   count++;
+  //   currClient.current = clients[count];
+  //   if (count === clients.length) { 
+  //     count = 0;
+  //   }
+  // }
+  // setInterval(cycleDispClient, 2000);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => 
+      setIndex(index => index + 1), 3000
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
 
   return (
     <div className="isolate bg-white">
@@ -226,7 +244,10 @@ export default function Example() {
             <div>
               <div>
                 <h1 className="text-3xl font-light tracking-tight text-left sm:text-6xl">
-                  Premier family office services for <span className='font-semibold text-sky-700'>{clientName}</span>.
+                  Premier family office services for 
+                  <TextTransition springConfig={presets.default}>
+                      {clients[index % clients.length]}.
+                  </TextTransition>
                 </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a
