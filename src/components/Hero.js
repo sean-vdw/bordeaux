@@ -240,7 +240,7 @@ export default function Header() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8 h-screen">
-          <div className="flex justify-end max-w-3xl 2xl:max-w-4xl pt-20 mt-32 pb-20 sm:pt-48 sm:pb-40">
+          <div className="flex justify-end max-w-3xl 2xl:max-w-5xl pt-20 mt-32 pb-20 sm:pt-48 sm:pb-40">
             <div>
               <div>
                 <h1 className="text-4xl font-light tracking-tight text-left sm:text-6xl 2xl:text-7xl 2xl:mb-12">
