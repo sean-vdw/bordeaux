@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, Fragment } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -244,10 +244,7 @@ export default function Header() {
             <div>
               <div>
                 <h1 className="text-3xl font-light tracking-tight text-left sm:text-6xl">
-                  Premier family office services for 
-                  <TextTransition springConfig={presets.default}>
-                      {clients[index % clients.length]}.
-                  </TextTransition>
+                  Premier family office services for <TextTransition springConfig={presets.default}>{clients[index % clients.length]}.</TextTransition>
                 </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a
