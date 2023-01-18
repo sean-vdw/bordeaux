@@ -3,7 +3,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./src/components/Header.js",
+    "./src/components/Hero.js",
     "./src/components/About.js",
     "./src/components/Services.js",
     "./src/components/BlogSection.js",
