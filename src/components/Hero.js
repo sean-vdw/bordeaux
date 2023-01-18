@@ -244,7 +244,7 @@ export default function Header() {
             <div>
               <div>
                 <h1 className="text-4xl font-light tracking-tight text-left sm:text-7xl xl:mb-12 2xl:text-8xl 2xl:mb-20">
-                  Premier family office services for <TextTransition springConfig={presets.default}>{clients[index % clients.length]}.</TextTransition>
+                  Premier family office services for <TextTransition springConfig={presets.default}><span className='font-semibold text-sky-700'>{clients[index % clients.length]}</span>.</TextTransition>
                 </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
                   <a

@@ -1,10 +1,10 @@
 export default function Cta() {
   return (
-    <div className="bg-gray-50 mt-16">
+    <div className="bg-gray-50 my-16">
       <div className="mx-auto max-w-7xl py-12 px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 text-left">
         <h5 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Want to learn more?</span>
-          <span className="block text-sky-700">Let's explore how we'd work together.</span>
+          <span className="block">Evaluating advisors?</span>
+          <span className="block text-sky-700">Let us build a proposal for you.</span>
         </h5>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <a
