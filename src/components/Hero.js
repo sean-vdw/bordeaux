@@ -240,10 +240,10 @@ export default function Header() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8 h-screen">
-          <div className="flex justify-end max-w-3xl 2xl:max-w-5xl pt-20 mt-32 pb-20 sm:pt-48 sm:pb-40 xl:mt-52 2xl:mt-60">
+          <div className="flex justify-end max-w-4xl 2xl:max-w-7xl pt-20 mt-32 pb-20 sm:pt-48 sm:pb-40 xl:mt-48 2xl:mt-72">
             <div>
               <div>
-                <h1 className="text-4xl font-light tracking-tight text-left sm:text-6xl 2xl:text-7xl 2xl:mb-12">
+                <h1 className="text-4xl font-light tracking-tight text-left sm:text-7xl xl:mb-12 2xl:text-8xl 2xl:mb-20">
                   Premier family office services for <TextTransition springConfig={presets.default}>{clients[index % clients.length]}.</TextTransition>
                 </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-start">
