@@ -4,6 +4,7 @@ import AnimatedCursor from 'react-animated-cursor';
 
 // COMPONENTS
 import Hero from './components/Hero';
+import Hero_alt from './components/Hero_alt';
 import About from './components/About';
 import Services from './components/Services';
 import BlogSection from './components/BlogSection';
@@ -23,7 +24,7 @@ function App() {
           border: '2px solid rgb(148 163 184)'
         }}
       />
-      <Hero/>
+      <Hero_alt/>
       <About />
       <Services />
       <BlogSection />
