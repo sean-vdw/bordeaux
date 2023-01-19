@@ -50,27 +50,6 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  // const cycleArray = () => {
-  //   let client = clients[count];
-  //   console.log(client);
-  //   count++;
-  //   displayedClient = clients[count];
-  //   if (count === clients.length) {
-  //     count = 0;
-  //   }
-  // }
-  // setInterval(cycleArray, 2000);
-
-  // const cycleDispClient = () => {
-  //   console.log(currClient.current);
-  //   count++;
-  //   currClient.current = clients[count];
-  //   if (count === clients.length) { 
-  //     count = 0;
-  //   }
-  // }
-  // setInterval(cycleDispClient, 2000);
-
   useEffect(() => {
     const intervalId = setInterval(() => 
       setIndex(index => index + 1), 3000
@@ -80,9 +59,9 @@ export default function Header() {
 
   return (
     <div className="isolate bg-white">
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      <div className="absolute inset-x-0 top-[-10rem] -z-10 overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
-          className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          className="relative animate-wiggle left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -258,9 +237,9 @@ export default function Header() {
                   </a>
                 </div>
               </div>
-              <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+              <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg
-                  className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                  className="relative animate-wiggle left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
                   viewBox="0 0 1155 678"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
