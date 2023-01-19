@@ -200,13 +200,13 @@ export default function HeroAlt() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8 h-screen z-20">
-          <div className="flex justify-end max-w-2xl 2xl:max-w-7xl pt-20 mt-32 pb-20 sm:pt-48 sm:pb-40 xl:mt-48 2xl:mt-72">
+          <div className="flex justify-start max-w-full pt-20 mt-96 pb-20 sm:pt-48 sm:pb-40 xl:mt-96 2xl:mt-96">
             <div>
               <div>
-                <h1 className="text-4xl font-light tracking-tight text-left sm:text-5xl xl:mb-2 2xl:text-8xl 2xl:mb-20">
+                <h1 className="text-3xl mb-2 font-light tracking-tight text-left sm:text-5xl xl:mb-2 xl:text-6xl 2xl:text-7xl 2xl:mb-12">
                   Premier family office services for <TextTransition springConfig={presets.default}><span className='font-semibold text-sky-700'>{clients[index % clients.length]}</span>.</TextTransition>
                 </h1>
-                <div className="mt-6 flex gap-x-4 sm:justify-start">
+                <div className="mt-6 xl:mt-10 flex gap-x-4 sm:justify-start">
                   <a
                     href="#"
                     className="inline-block rounded-lg bg-slate-600 px-4 py-1.5 sm:text-base text-sm font-semibold leading-7 text-white shadow-sm ring-1 ring-slate-600 hover:bg-sky-700 hover:ring-sky-700 ease-in duration-300 hover:scale-105 hover:drop-shadow-2xl"
