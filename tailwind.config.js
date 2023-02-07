@@ -9,6 +9,7 @@ module.exports = {
     "./src/components/Services.js",
     "./src/components/BlogSection.js",
     "./src/components/Cta.js",
+    "./src/components/Footer.js",
   ],
   theme: {
     extend: {

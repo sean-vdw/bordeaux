@@ -9,6 +9,7 @@ import About from './components/About';
 import Services from './components/Services';
 import BlogSection from './components/BlogSection';
 import Cta from './components/Cta';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Services />
       <BlogSection />
       <Cta />
+      <Footer />
     </div>
   );
 }
