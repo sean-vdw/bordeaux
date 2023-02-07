@@ -1,10 +1,10 @@
 import {
   CalculatorIcon,
   ChartPieIcon,
-  GlobeAmericasIcon,
   LightBulbIcon,
   LockOpenIcon,
   MagnifyingGlassIcon,
+  UserGroupIcon,
 } from '@heroicons/react/24/outline'
 
 const features = [
@@ -14,9 +14,9 @@ const features = [
     icon: ChartPieIcon,
   },
   {
-    name: 'Impact',
-    description: 'We believe in leverging our expertise to make an impact at scale. This means providing families with best-in-class resources to benefit the communities, people, and causes most important to them.',
-    icon: GlobeAmericasIcon,
+    name: 'Private Access',
+    description: 'We believe diversified growth and asset protection extend beyond simply stocks and bonds. We utilize assets like institutional real estate, private debt, and venture capital to enhance risk-adjusted returns.',
+    icon: LockOpenIcon,
   },
   {
     name: 'Tax Strategy',
@@ -24,14 +24,14 @@ const features = [
     icon: CalculatorIcon,
   },
   {
-    name: 'Ongoing Diligence',
+    name: 'Outsourced Analysis',
     description: 'Whether we\'re focusing on equity compensation, QSBS, charitable giving, generational wealth transfer, or managing cash flow, we provide quantitative insights to support any decisions in your financial life.',
     icon: MagnifyingGlassIcon,
   },
   {
-    name: 'Private Access',
-    description: 'We believe diversified growth and asset protection extend beyond simply stocks and bonds. We utilize assets like institutional real estate, private debt, and venture capital to enhance risk-adjusted returns.',
-    icon: LockOpenIcon,
+    name: 'Dedicated Team',
+    description: 'Each client is supported by a dedicated team of three advisors. We believe localized expertise can better anticipate client needs and avoid the information gaps associated with outsourced guidance.',
+    icon: UserGroupIcon,
   },
   {
     name: 'Knowledge Network',

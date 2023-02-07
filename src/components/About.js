@@ -9,7 +9,7 @@ export default function About() {
             <p className="mt-1 text-2xl font-bold tracking-tight text-slate-600 sm:text-4xl">
               Your Personal CFO
             </p>
-            <p className="mt-4 text-xl text-gray-700 leading-relaxed">
+            <p className="mt-4 text-2xl font-light text-gray-700 leading-relaxed">
               With over $4 billion in assets under management, we act as collaborative thought partners that build resilient portfolios, manage our clients' lives and legacies, and provide deep diligence on tax and estate strategy. 
               In doing so, we believe families can create leverage to benefit the people and causes they care about most.
             </p>
