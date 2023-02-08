@@ -4,9 +4,9 @@ import AnimatedCursor from 'react-animated-cursor';
 
 // COMPONENTS
 import Hero from './components/Hero';
-import Hero_alt from './components/Hero_alt';
 import About from './components/About';
 import Services from './components/Services';
+import ServicesAlt from './components/Services_alt';
 import BlogSection from './components/BlogSection';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
@@ -25,9 +25,9 @@ function App() {
           border: '2px solid rgb(148 163 184)'
         }}
       />
-      <Hero_alt/>
+      <Hero />
       <About />
-      <Services />
+      <ServicesAlt />
       <BlogSection />
       <Cta />
       <Footer />

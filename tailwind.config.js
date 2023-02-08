@@ -7,6 +7,7 @@ module.exports = {
     "./src/components/Hero_alt.js",
     "./src/components/About.js",
     "./src/components/Services.js",
+    "./src/components/Services_alt.js",
     "./src/components/BlogSection.js",
     "./src/components/Cta.js",
     "./src/components/Footer.js",
