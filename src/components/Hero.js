@@ -201,7 +201,7 @@ export default function Hero() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8 h-screen z-20">
-          <div className="flex justify-start items-end max-w-full pt-20 mt-72 pb-20 sm:pt-48 sm:pb-40 xl:mt-56 2xl:mt-[34rem]">
+          <div className="flex justify-start items-end max-w-full pt-20 mt-72 pb-20 sm:pt-48 sm:pb-40 xl:mt-56 2xl:pt-[34rem] 2xl:pb-0">
             <div>
               <div>
                 <h1 className="text-4xl mb-4 font-light tracking-tight text-left sm:text-5xl xl:mb-6 xl:text-6xl 2xl:text-8xl 2xl:mb-16">
