@@ -11,6 +11,7 @@ module.exports = {
     "./src/components/BlogSection.js",
     "./src/components/Cta.js",
     "./src/components/Footer.js",
+    "./src/components/Contact.js",
   ],
   theme: {
     extend: {
@@ -27,5 +28,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

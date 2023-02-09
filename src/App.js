@@ -5,11 +5,11 @@ import AnimatedCursor from 'react-animated-cursor';
 // COMPONENTS
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
 import ServicesAlt from './components/Services_alt';
 import BlogSection from './components/BlogSection';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -25,12 +25,14 @@ function App() {
           border: '2px solid rgb(148 163 184)'
         }}
       />
-      <Hero />
-      <About />
-      <ServicesAlt />
-      <BlogSection />
-      <Cta />
-      <Footer />
+      <Route exact path='/' component={Hero} />
+      <Route exact path='/' component={About} />
+      <Route exact path='/' component={ServicesAlt} />
+      <Route exact path='/' component={BlogSection} />
+      <Route exact path='/' component={Cta} />
+      <Route path='/contact' component={Contact} />
+
+      <Route path='/' component={Footer} />
     </div>
   );
 }

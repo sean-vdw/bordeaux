@@ -3,7 +3,7 @@ export default function About() {
   return (
     <div id="about" className="bg-transparent relative my-20 xl:mt-0 py-10 xl:pt-0">
       <div className="mx-auto w-11/12 lg:w-10/12 lg:px-8">
-        <div className="py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:py-20 lg:px-20">
+        <div className="py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:py-20 lg:px-20 2xl:mb-24">
           <div className="lg:w-0 lg:flex-1 text-center items-center">
             {/* <h2 className="text-lg font-semibold text-gray-900 uppercase">About Us</h2>
             <p className="mt-1 text-2xl font-bold tracking-tight text-slate-600 sm:text-4xl">

@@ -141,7 +141,7 @@ export default function Hero() {
                 )}
               </Popover>
               <a
-                href="#"
+                href="/contact"
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-slate-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-sky-700 ease-in duration-300 hover:scale-105 hover:drop-shadow-2xl"
               >
                 Get In Touch
