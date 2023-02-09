@@ -1,4 +1,7 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import assetGraphic from '../assets/assetsGraphic.png'
+import taxGraphic from '../assets/taxGraphic.png'
+import teamGraphic from '../assets/teamGraphic.png'
 
 const investFeatures = [
   {
@@ -86,8 +89,8 @@ export default function ServicesAlt() {
               </div>
             </div>
             <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="Product screenshot"
+              src={assetGraphic}
+              alt="Assets screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
               height={1442}
@@ -123,9 +126,9 @@ export default function ServicesAlt() {
             </div>
             <div className="flex items-start justify-end lg:order-first">
               <img
-                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-                alt="Product screenshot"
-                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                src={taxGraphic}
+                alt="Tax screenshot"
+                className="w-[48rem] min-h-fit max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 width={2432}
                 height={1442}
               />
@@ -141,7 +144,7 @@ export default function ServicesAlt() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg sm:text-left">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-600">Dedicated Team</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Outsourced Back Office</p>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">End-to-End Oversight</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Each client is supported by a dedicated team of three advisors. 
                   We believe localized expertise can better anticipate client needs and avoid the information gaps associated with outsourced guidance.
@@ -160,8 +163,8 @@ export default function ServicesAlt() {
               </div>
             </div>
             <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="Product screenshot"
+              src={teamGraphic}
+              alt="Personal CFO screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
               height={1442}
