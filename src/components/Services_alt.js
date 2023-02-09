@@ -68,7 +68,7 @@ export default function ServicesAlt() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg sm:text-left">
+              <div className="lg:max-w-lg text-left">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-600">Investment Advisory</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Your Personal CIO</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -91,7 +91,7 @@ export default function ServicesAlt() {
             <img
               src={assetGraphic}
               alt="Assets screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-[48rem] max-w-full sm:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
               height={1442}
             />
@@ -104,7 +104,7 @@ export default function ServicesAlt() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:ml-auto lg:pt-4 lg:pl-4">
-              <div className="lg:max-w-lg sm:text-left">
+              <div className="lg:max-w-lg text-left">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-600">Tax Planning</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Strategic Tax Advisors</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -128,7 +128,7 @@ export default function ServicesAlt() {
               <img
                 src={taxGraphic}
                 alt="Tax screenshot"
-                className="w-[48rem] min-h-fit max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                className="w-[48rem] max-w-full sm:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 width={2432}
                 height={1442}
               />
@@ -142,7 +142,7 @@ export default function ServicesAlt() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg sm:text-left">
+              <div className="lg:max-w-lg text-left">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-600">Dedicated Team</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">End-to-End Oversight</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -165,7 +165,7 @@ export default function ServicesAlt() {
             <img
               src={teamGraphic}
               alt="Personal CFO screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-[48rem] max-w-full sm:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
               height={1442}
             />

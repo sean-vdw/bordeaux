@@ -66,7 +66,7 @@ export default function Hero() {
           <source src={bgVideo} type='video/mp4'/>
         </video>
       </div>
-      
+
       {/* NAVBAR */}
       <div className="px-6 pt-6 lg:px-8 z-10">
         <div>
@@ -201,10 +201,10 @@ export default function Hero() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8 h-screen z-20">
-          <div className="flex justify-start items-end max-w-full pt-20 mt-96 pb-20 sm:pt-48 sm:pb-40 xl:mt-56 2xl:mt-96">
+          <div className="flex justify-start items-end max-w-full pt-20 mt-72 pb-20 sm:pt-48 sm:pb-40 xl:mt-56 2xl:mt-[34rem]">
             <div>
               <div>
-                <h1 className="text-3xl mb-2 font-light tracking-tight text-left sm:text-5xl xl:mb-2 xl:text-6xl 2xl:text-8xl 2xl:mb-20">
+                <h1 className="text-4xl mb-4 font-light tracking-tight text-left sm:text-5xl xl:mb-6 xl:text-6xl 2xl:text-8xl 2xl:mb-16">
                   Premier family office services for <TextTransition springConfig={presets.default}><span className='font-semibold text-sky-700'>{clients[index % clients.length]}</span>.</TextTransition>
                 </h1>
                 <div className="mt-6 xl:mt-2 flex gap-x-4 sm:justify-start">
