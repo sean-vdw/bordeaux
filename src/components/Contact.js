@@ -211,8 +211,7 @@ export default function Contact() {
               <div className="mx-auto max-w-md sm:max-w-lg lg:mx-0 text-left">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Let's work together</h2>
                 <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-                  We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear
-                  from you! Send us a message using the form opposite, or email us.
+                  We’d love to hear from you! Send us a message using the form opposite, or email us.
                 </p>
                 <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                   <div>
@@ -339,6 +338,22 @@ export default function Contact() {
               <ArrowTopRightOnSquareIcon className="ml-3 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
             </a>
           </div>
+        </div>
+        <div className='grid grid-cols-1 sm:grid-cols-2'>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.136069994891!2d-122.19234218494768!3d37.45750907981842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa4a71ffa89b1%3A0xfcab92880be635da!2sBordeaux%20Wealth%20Advisors!5e0!3m2!1sen!2sus!4v1675982972323!5m2!1sen!2sus" 
+            className='h-80 w-full border-none'
+            allowFullScreen="yes" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.505804959508!2d-122.20818568458522!3d47.65516957918793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490132ceb25e993%3A0x789a5c5fec581331!2s5110%20Carillon%20Point%2C%20Kirkland%2C%20WA%2098033!5e0!3m2!1sen!2sus!4v1675983920522!5m2!1sen!2sus" 
+            className='h-80 w-full border-none'
+            allowFullScreen="yes" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </main>
     </div>
