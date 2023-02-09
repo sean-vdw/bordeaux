@@ -1,3 +1,5 @@
+import blueLogo from '../assets/blueLogo.svg'
+
 const navigation = {
   main: [
     { name: 'Contact Us', href: '#' },
@@ -84,14 +86,14 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className="mt-10 flex justify-center space-x-10">
+        {/* <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
             <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
-        </div>
+        </div> */}
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           &copy; 2023 Bordeaux Wealth Advisors, LLC. All rights reserved.
         </p>

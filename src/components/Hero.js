@@ -2,7 +2,7 @@ import { useState, useEffect, Fragment } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import bwaLogo from '../assets/logo.svg'
+import blueLogo from '../assets/blueLogo.svg'
 import TextTransition, { presets } from 'react-text-transition'
 import bgVideo from '../assets/bgVideo.mp4'
 
@@ -72,7 +72,7 @@ export default function Hero() {
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Bordeaux Wealth Advisors</span>
-                <img className="h-12" src={bwaLogo} alt="Bordeaux Wealth Advisors" />
+                <img className="h-12" src={blueLogo} alt="Bordeaux Wealth Advisors" />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -154,7 +154,7 @@ export default function Hero() {
                     <span className="sr-only">Bordeaux Wealth Advisors</span>
                     <img
                       className="h-8"
-                      src={bwaLogo}
+                      src={blueLogo}
                       alt="Bordeaux Wealth Advisors"
                     />
                   </a>
