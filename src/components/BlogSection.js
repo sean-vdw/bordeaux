@@ -95,11 +95,11 @@ export default function BlogSection() {
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
-            <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
+            <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg hover:-translate-y-5 ease-in-out duration-300">
               <div className="flex-shrink-0">
                 <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
               </div>
-              <div className="flex flex-1 flex-col justify-between bg-white p-6">
+              <div className="flex flex-1 flex-col justify-between bg-white hover:bg-gray-200 ease-in-out duration-300 p-6">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-sky-700">
                     <a href={post.category.href} className="hover:underline">

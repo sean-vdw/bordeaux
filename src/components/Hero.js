@@ -66,6 +66,8 @@ export default function Hero() {
           <source src={bgVideo} type='video/mp4'/>
         </video>
       </div>
+      
+      {/* NAVBAR */}
       <div className="px-6 pt-6 lg:px-8 z-10">
         <div>
           <nav className="flex h-9 align-middle items-center justify-between" aria-label="Global">
